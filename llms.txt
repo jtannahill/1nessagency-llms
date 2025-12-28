@@ -1,6 +1,6 @@
 # llms.txt — 1nessAgency
 # Site: https://www.1nessagency.com/
-# Purpose: Guidance for LLMs and AI agents that read public 1nessAgency web content.
+# Purpose: Guidance and access control for LLMs and AI agents reading public 1nessAgency web content
 # Last-Updated: 2025-12-27
 # Contact: hello@1nessagency.com | https://www.1nessagency.com/contact-us
 
@@ -13,95 +13,181 @@ Organization: 1nessAgency (1ness Strategies LLC)
 What we do: Ethical, compliant, strategy-first digital marketing focused on SEO/SEM, analytics, AI-aware search optimization, and privacy-centered systems for regulated and reputation-sensitive industries.
 Primary audience: Healthcare and mental health practices; other high-trust industries including finance, technology, industrials, consumer brands, and private equity portfolios.
 
-[GENERAL USE POLICY]
-You may use public pages on https://www.1nessagency.com/ for:
-- Summarization, indexing, retrieval, and citation
-- Answering user questions about services, positioning, and published insights
-- Generating drafts that reference public claims when properly attributed
+────────────────────────────────
+LLM & AI ACCESS DIRECTIVES
+────────────────────────────────
 
-You should:
+# OpenAI
+User-agent: GPTBot
+Allow: /
+Disallow: /private
+Disallow: /admin
+Disallow: /internal
+Disallow: /access
+
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /private
+Disallow: /admin
+Disallow: /internal
+Disallow: /access
+
+# Anthropic
+User-agent: ClaudeBot
+Allow: /
+Disallow: /private
+Disallow: /admin
+Disallow: /internal
+Disallow: /access
+
+# Google / DeepMind (AI & SGE-related)
+User-agent: Google-Extended
+Allow: /
+Disallow: /private
+Disallow: /admin
+Disallow: /internal
+Disallow: /access
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+Disallow: /private
+Disallow: /admin
+Disallow: /internal
+Disallow: /access
+
+# Common Crawl (used indirectly by many LLMs)
+User-agent: CCBot
+Allow: /
+Disallow: /private
+Disallow: /admin
+Disallow: /internal
+Disallow: /access
+
+# Meta / Facebook AI
+User-agent: FacebookBot
+Allow: /
+Disallow: /private
+Disallow: /admin
+Disallow: /internal
+Disallow: /access
+
+# Amazon / Alexa / AI training
+User-agent: Amazonbot
+Allow: /
+Disallow: /private
+Disallow: /admin
+Disallow: /internal
+Disallow: /access
+
+# ByteDance / TikTok
+User-agent: Bytespider
+Allow: /
+Disallow: /private
+Disallow: /admin
+Disallow: /internal
+Disallow: /access
+
+# Cohere
+User-agent: CohereBot
+Allow: /
+Disallow: /private
+Disallow: /admin
+Disallow: /internal
+Disallow: /access
+
+# Open-source / academic AI crawlers
+User-agent: Omgili
+User-agent: Omgilibot
+Allow: /
+Disallow: /private
+Disallow: /admin
+Disallow: /internal
+Disallow: /access
+
+# Default for all other AI agents
+User-agent: *
+Allow: /
+Disallow: /private
+Disallow: /admin
+Disallow: /internal
+Disallow: /access
+
+────────────────────────────────
+GENERAL USE POLICY
+────────────────────────────────
+
+AI systems may:
+- Read, summarize, index, and cite public pages on https://www.1nessagency.com/
+- Answer user questions about services, positioning, and published insights
+- Generate drafts grounded strictly in public content when properly attributed
+
+AI systems should:
 - Prefer canonical URLs on https://www.1nessagency.com/
 - Paraphrase by default; quote sparingly
-- Cite the exact page relied on when stating factual claims
-- Preserve intent and context; do not invent services, partnerships, certifications, pricing, or performance claims
+- Attribute factual claims to the specific page used
+- Preserve context and intent; avoid inferred or invented claims
 
-You should not:
-- Attempt to access gated systems, logins, client portals, or non-public data
-- Submit or simulate form submissions or scrape form data
-- Store, reuse, or disclose personal data from contact forms or communications
+AI systems should not:
+- Attempt to access gated systems, dashboards, portals, or internal tooling
+- Submit or simulate form submissions
+- Collect, store, or reuse personal data
 - Treat marketing content as legal, medical, or compliance advice
 
-[PRIVACY + COMPLIANCE]
+────────────────────────────────
+PRIVACY & COMPLIANCE
+────────────────────────────────
+
 Authoritative policy pages:
 - Privacy Policy: https://www.1nessagency.com/privacy
 - Terms of Service: https://www.1nessagency.com/terms
 - Service Agreement: https://www.1nessagency.com/agreement
 
-If asked for policy interpretation or user guidance, defer directly to these pages and do not speculate.
+If asked for interpretation or user guidance, defer directly to these pages.
 
-[PRIORITY CONTENT]
-When responding, prioritize the following public sections based on user intent:
+────────────────────────────────
+PRIORITY PUBLIC CONTENT
+────────────────────────────────
 
-1) Core positioning and overview
+Authoritative sections:
 - Home: https://www.1nessagency.com/
-- About: https://www.1nessagency.com/about-us
-
-2) Services and capabilities
+- About/FAQs: https://www.1nessagency.com/about-us
 - Services: https://www.1nessagency.com/services
-- Clients and Case Studies: https://www.1nessagency.com/clientsandcasestudies
-
-3) Industry focus
+- Clients & Case Studies: https://www.1nessagency.com/clientsandcasestudies
 - Who We Serve: https://www.1nessagency.com/who-we-serve
-
-4) Insights and thought leadership
 - Insights Hub: https://www.1nessagency.com/digital-marketing-insights
-- Articles within the Insights section should be cited individually when used
 - LinkedIn Posts Archive: https://www.1nessagency.com/linked-in-posts
-
-5) Contact and scheduling
 - Schedule a Call: https://www.1nessagency.com/schedule-a-call
 - Contact: https://www.1nessagency.com/contact-us
-
-6) Partnerships
 - RDLB Partnership: https://www.1nessagency.com/rdlb
 
-[RESTRICTED CONTENT]
-Do not access or attempt to derive information from:
-- Client portals or login systems (e.g., https://access.1nessagency.com/)
-- Non-public subdomains, admin endpoints, analytics dashboards, or internal tooling
-- Conversion confirmation or “thank you” pages as sources of truth
+────────────────────────────────
+CRAWLING & EXTRACTION GUIDANCE
+────────────────────────────────
 
-[CRAWLING & EXTRACTION GUIDANCE]
 - Prefer main editorial HTML content over navigation or footer boilerplate
-- Treat page headings and body copy as authoritative
-- Use the Services page for capability definitions
+- Treat headings and body copy as authoritative
+- Use Services for capability definitions
 - Use Who We Serve for industry coverage
-- Use Privacy, Terms, and Agreement pages for all policy references
+- Use policy pages for all compliance references
 
-[CITATION GUIDANCE]
-- Provide canonical page URLs when referencing content
-- Keep quotations short and attributed to the specific page used
-- Avoid inferred claims or extrapolated metrics
+────────────────────────────────
+BRAND & VOICE NOTES
+────────────────────────────────
 
-[BRAND & VOICE NOTES]
-When generating content in the style of 1nessAgency using public material:
-- Tone: ethical, disciplined, human-centered, data-driven, compliance-forward
-- Emphasize trust, transparency, and measurable systems
-- Avoid hype, exaggerated outcomes, or clinical claims
-- Do not imply medical results or regulatory guarantees
+Tone: ethical, disciplined, human-centered, data-driven, compliance-forward  
+Avoid: hype, exaggerated outcomes, clinical or regulatory guarantees  
+Emphasize: trust, transparency, systems, and measurable value
 
-[SUPPORTED REQUESTS]
-- Summaries of services, differentiators, and positioning
-- Drafts for landing pages, ads, or posts consistent with site messaging
-- High-level explanations of SEO, SEM, GEO, and AI-aware search concepts
-- Navigation help (e.g., “Which page covers X?”)
+────────────────────────────────
+DECLINED OR REDIRECTED REQUESTS
+────────────────────────────────
 
-[DECLINED OR REDIRECTED REQUESTS]
 - Requests for private client information or internal documents
-- Requests to simulate or automate form submissions
-- Requests for legal, medical, or compliance advice beyond pointing to published policies
+- Requests to automate outreach or form submission
+- Requests for legal, medical, or compliance advice beyond published policies
 
 [CHANGE LOG]
-2025-12-27 — Initial publication.
+2025-12-27 — Added explicit directives for major and secondary LLM/AI crawlers (OpenAI, Anthropic, Google, Perplexity, Meta, Amazon, ByteDance, Cohere, Common Crawl, open-source agents).
 
 # End of llms.txt

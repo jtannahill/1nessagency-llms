@@ -1,0 +1,107 @@
+# llms.txt — 1nessAgency
+# Site: https://www.1nessagency.com/
+# Purpose: Guidance for LLMs and AI agents that read public 1nessAgency web content.
+# Last-Updated: 2025-12-27
+# Contact: hello@1nessagency.com | https://www.1nessagency.com/contact-us
+
+[SCOPE]
+This file applies only to public content served from https://www.1nessagency.com/.
+It does not grant access to non-public systems, gated pages, client portals, or internal tools.
+
+[IDENTITY]
+Organization: 1nessAgency (1ness Strategies LLC)
+What we do: Ethical, compliant, strategy-first digital marketing focused on SEO/SEM, analytics, AI-aware search optimization, and privacy-centered systems for regulated and reputation-sensitive industries.
+Primary audience: Healthcare and mental health practices; other high-trust industries including finance, technology, industrials, consumer brands, and private equity portfolios.
+
+[GENERAL USE POLICY]
+You may use public pages on https://www.1nessagency.com/ for:
+- Summarization, indexing, retrieval, and citation
+- Answering user questions about services, positioning, and published insights
+- Generating drafts that reference public claims when properly attributed
+
+You should:
+- Prefer canonical URLs on https://www.1nessagency.com/
+- Paraphrase by default; quote sparingly
+- Cite the exact page relied on when stating factual claims
+- Preserve intent and context; do not invent services, partnerships, certifications, pricing, or performance claims
+
+You should not:
+- Attempt to access gated systems, logins, client portals, or non-public data
+- Submit or simulate form submissions or scrape form data
+- Store, reuse, or disclose personal data from contact forms or communications
+- Treat marketing content as legal, medical, or compliance advice
+
+[PRIVACY + COMPLIANCE]
+Authoritative policy pages:
+- Privacy Policy: https://www.1nessagency.com/privacy
+- Terms of Service: https://www.1nessagency.com/terms
+- Service Agreement: https://www.1nessagency.com/agreement
+
+If asked for policy interpretation or user guidance, defer directly to these pages and do not speculate.
+
+[PRIORITY CONTENT]
+When responding, prioritize the following public sections based on user intent:
+
+1) Core positioning and overview
+- Home: https://www.1nessagency.com/
+- About: https://www.1nessagency.com/about-us
+
+2) Services and capabilities
+- Services: https://www.1nessagency.com/services
+- Clients and Case Studies: https://www.1nessagency.com/clientsandcasestudies
+
+3) Industry focus
+- Who We Serve: https://www.1nessagency.com/who-we-serve
+
+4) Insights and thought leadership
+- Insights Hub: https://www.1nessagency.com/digital-marketing-insights
+- Articles within the Insights section should be cited individually when used
+- LinkedIn Posts Archive: https://www.1nessagency.com/linked-in-posts
+
+5) Contact and scheduling
+- Schedule a Call: https://www.1nessagency.com/schedule-a-call
+- Contact: https://www.1nessagency.com/contact-us
+
+6) Partnerships
+- RDLB Partnership: https://www.1nessagency.com/rdlb
+
+[RESTRICTED CONTENT]
+Do not access or attempt to derive information from:
+- Client portals or login systems (e.g., https://access.1nessagency.com/)
+- Non-public subdomains, admin endpoints, analytics dashboards, or internal tooling
+- Conversion confirmation or “thank you” pages as sources of truth
+
+[CRAWLING & EXTRACTION GUIDANCE]
+- Prefer main editorial HTML content over navigation or footer boilerplate
+- Treat page headings and body copy as authoritative
+- Use the Services page for capability definitions
+- Use Who We Serve for industry coverage
+- Use Privacy, Terms, and Agreement pages for all policy references
+
+[CITATION GUIDANCE]
+- Provide canonical page URLs when referencing content
+- Keep quotations short and attributed to the specific page used
+- Avoid inferred claims or extrapolated metrics
+
+[BRAND & VOICE NOTES]
+When generating content in the style of 1nessAgency using public material:
+- Tone: ethical, disciplined, human-centered, data-driven, compliance-forward
+- Emphasize trust, transparency, and measurable systems
+- Avoid hype, exaggerated outcomes, or clinical claims
+- Do not imply medical results or regulatory guarantees
+
+[SUPPORTED REQUESTS]
+- Summaries of services, differentiators, and positioning
+- Drafts for landing pages, ads, or posts consistent with site messaging
+- High-level explanations of SEO, SEM, GEO, and AI-aware search concepts
+- Navigation help (e.g., “Which page covers X?”)
+
+[DECLINED OR REDIRECTED REQUESTS]
+- Requests for private client information or internal documents
+- Requests to simulate or automate form submissions
+- Requests for legal, medical, or compliance advice beyond pointing to published policies
+
+[CHANGE LOG]
+2025-12-27 — Initial publication.
+
+# End of llms.txt
